@@ -6,11 +6,17 @@
 
     $username = $_POST['username'];
     $password = md5($_POST['password']) ;
-    $query = "SELECT username, password  FROM demo";
+    $query = "SELECT username, password  FROM domo";
         $result = mysqli_query($link, $query);
         // echo '<pre>';
         // print_r($result);
-        // echo '</pre>'; ;
+        // echo '</pre>'; 
+        echo '<pre>';
+        print_r(mysqli_num_fields($result));
+        echo '</pre>';
+        // echo '<pre>';
+        // print_r(mysqli_fetch_assoc($result));
+        // echo '</pre>';
         if(mysqli_num_rows($result) > 0){
             $i =0; 
             while($row = mysqli_fetch_assoc($result)){

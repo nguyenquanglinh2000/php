@@ -1,0 +1,46 @@
+.all {
+    width: 500px;
+    background-color: whitesmoke;
+    border: 1px solid #8080804f;
+    margin: auto;
+}
+h2 {
+    font-size: 17px;
+    color: red;
+}
+form {
+    margin-left: 13%;
+    margin-right: 13%;
+    clear: both;
+}
+input[type="text"] {
+    margin-top: 5px;
+    margin-left: 100px;
+}
+input.pd {
+    margin-left: 71px;
+}
+input.pd-name {
+    margin-left: 76px;
+}
+select {
+    margin-left: 32px;
+    width: 182px;
+    margin-bottom: 6px;
+}
+.inf-all {
+    margin-top: 11px;
+}
+select.h6c {
+    margin-left: 142px;
+}
+select.pd.en {
+    margin-left: 54px;
+}
+select.pd.ep {
+    margin-left: 69px;
+}
+.submit {
+    text-align: center;
+    width: 100%;
+}

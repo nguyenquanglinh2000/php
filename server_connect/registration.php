@@ -90,7 +90,7 @@
             <input type="password" name="password">
         </div>
 
-        <div class="a">
+        <!-- <div class="a">
             <label for="">Re-Password</label>
             <input type="password" name="re_password">
             <br>
@@ -99,7 +99,7 @@
         </span>
         </div>
         <div>
-        </div>
+        </div> -->
 
         <div class="a b">
             <input type="submit" name="submit" value="Đăng Ký">
