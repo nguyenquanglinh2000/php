@@ -5,23 +5,22 @@
     if(!isset($_POST["username"])){
         die("");
     }
-
-    // Nhung file connect de ket noi voi server
     include('connect.php');
     
     //Khai bao UTF8
     header('Content-Type: text/html; charset=UTF-8');
-
+    
     //Lay du lieu tu file registration.php
     $username = $_POST['username'];
     $password = $_POST['password'];
-
+    
     //Check xem nguoi dung da nhap day du thong tin chua
     if(!$username || !$password){
         echo "Bạn chưa nhập đầy đủ thông tin. <a href='javascrip: history.go(-1)'>Trở lại</a>";
         exit;
     }
-
+    
+    // Nhung file connect de ket noi voi server
     //Ma hoa mat khau
     $password = md5($password);
 

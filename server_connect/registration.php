@@ -65,11 +65,10 @@
             text-decoration:none;
             color:blue;
         }
-        .a span{
-
-        }
-        .confirm_password {
-
+        .tong .confirm_password{
+            text-align:center;
+            display:block;
+            color:red;
         }
     </style>
     
@@ -90,22 +89,28 @@
             <input type="password" name="password">
         </div>
 
-        <!-- <div class="a">
+        <div class="a">
             <label for="">Re-Password</label>
             <input type="password" name="re_password">
-            <br>
-        <span class="confirm_password">
-            wrong confirm password
-        </span>
+            
+            
         </div>
-        <div>
-        </div> -->
+
+        
+        <?php
+            if($_POST["password"] != $_POST["re_password"]){
+        
+                $re = '<span class="confirm_password">
+                            wrong confirm password
+                        </span>';
+            }
+        ?>
+        
 
         <div class="a b">
             <input type="submit" name="submit" value="Đăng Ký">
         </div>
 
-        <!--  -->
         
         <div class="b">
             <a href="sign_in.php">Đăng Nhập</a>
